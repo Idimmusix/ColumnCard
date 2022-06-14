@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: blue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    color: aliceblue;
+}
+.first-card h3, .second-card h3, .third-card h3{
+    padding: 0.5rem;
+    margin: 1px;
+}
+.first-card button, .second-card button, .third-card button{
+    padding: 0.5rem;
+    margin: 1px;
+}
+.first-card{
+    width:100%;
+    background-color: #e28525;
+    padding: 2em;
+}
+.second-card{
+    width:100%;
+    background-color: #016972;
+    padding: 2em;
+}
+.third-card{
+    width:100%;
+    background-color: #00403f;
+    padding: 2em;
+}
+button{
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
