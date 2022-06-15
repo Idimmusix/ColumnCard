@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f0f0;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+.card{
+    display: grid;
+    grid-template-areas: 
+    'a b c';
+    gap: 1px;
+    width: 50%;
+    margin:auto;
+}
+.first-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e28525;
+    grid-area: a;
+}
+.second-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #016972;
+    grid-area: b;
+}
+.third-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: c;
+    background-color: #00403f;
+}
+.card button{
+    margin: 10%;
+    align-items: flex-end;
+}
+.card p{
+    padding: 10px;
+    align-items: center;
+}

@@ -5,7 +5,7 @@
 }
 
 .card{
-    background-color: blue;
+    background-color: #f5f0f0;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -14,10 +14,6 @@
     color: aliceblue;
 }
 .first-card h3, .second-card h3, .third-card h3{
-    padding: 0.5rem;
-    margin: 1px;
-}
-.first-card button, .second-card button, .third-card button{
     padding: 0.5rem;
     margin: 1px;
 }
