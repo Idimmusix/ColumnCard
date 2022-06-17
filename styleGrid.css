@@ -1,47 +1,144 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #f5f0f0;
-    display: flex;
-    place-items: center;
-    min-height: 100vh;
+body {
+  background-color: #f5f0f0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
 }
-.card{
-    display: grid;
-    grid-template-areas: 
-    'a b c';
-    gap: 1px;
-    width: 50%;
-    margin:auto;
+header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
 }
-.first-card{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #e28525;
-    grid-area: a;
+.navbar {
+  padding: 0;
 }
-.second-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #016972;
-    grid-area: b;
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
-.third-card{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    grid-area: c;
-    background-color: #00403f;
+.navbar li {
+  position: relative;
 }
-.card button{
-    margin: 10%;
-    align-items: flex-end;
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  white-space: nowrap;
+  transition: 0.3s;
 }
-.card p{
-    padding: 10px;
-    align-items: center;
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #00ff00;
+}
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #00ff00;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-areas: "a b c";
+  gap: 1px;
+  width: 50%;
+  margin: auto;
+}
+.first-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e28525;
+  grid-area: a;
+}
+.second-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #016972;
+  grid-area: b;
+}
+.third-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: c;
+  background-color: #00403f;
+}
+.card button {
+  margin: 10%;
+  align-items: flex-end;
+}
+.card p {
+  padding: 10px;
+  align-items: center;
 }
