@@ -157,16 +157,40 @@ header {
   
   margin: auto;
 }
-button {
+.first-card button, .second-card button, .third-card button {
+
+  text-decoration: none;
+  color: initial;
   background-color: whitesmoke;
   border: none;
-  color: black;
+  font-weight: bold;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
-  cursor: pointer;
   border-radius: 16px;
 }
-
+.first-card button{
+  color:#e28525
+}
+.second-card button{
+  color: #016972;
+}
+.third-card button{
+  color: #111111;
+}
+button:hover {
+  /*opacity: 0;*/
+  border: 2px solid whitesmoke;
+  background-color: inherit;
+  outline-width: 5px;
+  color: antiquewhite;
+}
+button:focus {
+  /*opacity: 0;*/
+  border: 2px solid whitesmoke;
+  background-color: inherit;
+  outline-width: 5px;
+  color: antiquewhite;
+}
