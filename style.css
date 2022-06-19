@@ -102,7 +102,9 @@ header {
 }
 .card {
   background-color: #f5f0f0;
+  margin: auto;
   display: flex;
+  padding: 2em;
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -119,16 +121,25 @@ header {
   width: 100%;
   background-color: #e28525;
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .second-card {
   width: 100%;
   background-color: #016972;
+  display: flex;
+  flex-direction: column;
   padding: 2em;
+  align-items: center;
 }
 .third-card {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #00403f;
   padding: 2em;
+  align-items: center;
 }
 button {
   background-color: whitesmoke;
